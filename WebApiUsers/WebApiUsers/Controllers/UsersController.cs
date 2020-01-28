@@ -15,10 +15,10 @@ namespace WebApiUsers.Controllers
     public class UsersController : ControllerBase
     {
 
-        private readonly UserContext _context;
+        private readonly ApplicationDbContext _context;
 
 
-        public UsersController(UserContext context)
+        public UsersController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -26,7 +26,7 @@ namespace WebApiUsers.Controllers
 
         // GET: api/users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<User>>> GetUsersList()
         {
             return await _context.Users.ToListAsync();
 

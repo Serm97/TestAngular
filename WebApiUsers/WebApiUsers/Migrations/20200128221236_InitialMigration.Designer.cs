@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebApiUsers.Data;
+using WebApiUsers.Models;
 
 namespace WebApiUsers.Migrations
 {
-    [DbContext(typeof(UserContext))]
-    [Migration("20200128204405_InitialMigration")]
+    [DbContext(typeof(ApplicationDbContext))]
+    [Migration("20200128221236_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

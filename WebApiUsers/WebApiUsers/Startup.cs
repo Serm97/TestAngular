@@ -29,7 +29,7 @@ namespace WebApiUsers
         public void ConfigureServices(IServiceCollection services)
         {
             //Define Context and Connection to database
-            services.AddDbContext<UserContext>(options =>
+            services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("ConexionBD")));
             services.AddControllers();
             
