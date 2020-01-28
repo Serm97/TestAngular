@@ -12,3 +12,4 @@ project.lock.json
 *.user
 *.userosscache
 *.sln.docstates
+WebApiUsers/.vs/

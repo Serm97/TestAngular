@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using WebApiUsers.Models;
 using Microsoft.EntityFrameworkCore;
+using WebApiUsers.Data;
 
 namespace WebApiUsers
 {
@@ -27,10 +28,11 @@ namespace WebApiUsers
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
             //Define Context and Connection to database
-            services.AddDbContext<ApplicationDbContext>(options => 
+            services.AddDbContext<UserContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("ConexionBD")));
+            services.AddControllers();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

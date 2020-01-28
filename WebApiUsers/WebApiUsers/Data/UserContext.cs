@@ -7,14 +7,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace WebApiUsers.Data
 {
-    public class UserContext //: DbContext
+    public class UserContext : DbContext
     {
-        /*public UserContext(DbContextOptions<UserContext> options):base(options)
+        public UserContext(DbContextOptions<UserContext> options) : base(options)
         {
 
         }
 
         //Mapping of User Model
-        public Microsoft.EntityFrameworkCore.DbSet<User> UserProperties { get; set; }*/
+        public DbSet<User> Users { get; set; }
     }
 }

@@ -1,0 +1,3 @@
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp2.2\WebApiUsers.csprojAssemblyReference.cache
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp2.2\WebApiUsers.AssemblyInfoInputs.cache
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp2.2\WebApiUsers.AssemblyInfo.cs

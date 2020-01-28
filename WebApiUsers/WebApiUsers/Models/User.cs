@@ -12,7 +12,7 @@ namespace WebApiUsers.Models
         [Required]
         public string Username { get; set; }
         [Required]
-        public String NombreUsuario { get; set; }
-        public bool Activo { get; set; }
+        public String Name { get; set; }
+        public bool Active { get; set; }
     }
 }

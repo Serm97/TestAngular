@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Development Projects\\Angular\\TestAngular\\WebApiUsers\\WebApiUsers\\WebApiUsers.csproj": {}
+    "C:\\Development\\TestAngular\\WebApiUsers\\WebApiUsers\\WebApiUsers.csproj": {}
   },
   "projects": {
-    "D:\\Development Projects\\Angular\\TestAngular\\WebApiUsers\\WebApiUsers\\WebApiUsers.csproj": {
+    "C:\\Development\\TestAngular\\WebApiUsers\\WebApiUsers\\WebApiUsers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Development Projects\\Angular\\TestAngular\\WebApiUsers\\WebApiUsers\\WebApiUsers.csproj",
+        "projectUniqueName": "C:\\Development\\TestAngular\\WebApiUsers\\WebApiUsers\\WebApiUsers.csproj",
         "projectName": "WebApiUsers",
-        "projectPath": "D:\\Development Projects\\Angular\\TestAngular\\WebApiUsers\\WebApiUsers\\WebApiUsers.csproj",
-        "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
-        "outputPath": "D:\\Development Projects\\Angular\\TestAngular\\WebApiUsers\\WebApiUsers\\obj\\",
+        "projectPath": "C:\\Development\\TestAngular\\WebApiUsers\\WebApiUsers\\WebApiUsers.csproj",
+        "packagesPath": "C:\\Users\\seramirez\\.nuget\\packages\\",
+        "outputPath": "C:\\Development\\TestAngular\\WebApiUsers\\WebApiUsers\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\seramirez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,15 +41,21 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "EntityFramework": {
+            "Microsoft.AspNetCore.Http": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[2.2.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.1, )"
             },

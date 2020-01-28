@@ -8,16 +8,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace WebApiUsers.Models
 {
-    public class ApplicationDbContext: DbContext
+    public class ApplicationDbContext//: DbContext
     {
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        /*public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
         }
 
         //Mapping of User Model
-        public DbSet<User> UserProperties { get; set; }
+        public DbSet<User> UserProperties { get; set; }*/
     }
 }
 
