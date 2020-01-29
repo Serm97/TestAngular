@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,8 +12,11 @@ using WebApiUsers.Models;
 
 namespace WebApiUsers.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
+
     public class UsersController : ControllerBase
     {
 
@@ -24,7 +29,7 @@ namespace WebApiUsers.Controllers
         }
 
 
-        // GET: api/users
+        // GET: api/roles
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsersList()
         {
@@ -32,11 +37,11 @@ namespace WebApiUsers.Controllers
 
         }
 
-        // GET: api/Users/5
+        // GET: api/roles/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUserIndividual(int id)
         {
-            var userIndividual = _context.Users.FindAsync(id);
+            var userIndividual = _context.Users.Include(x => x.Roles).FirstOrDefaultAsync(x => x.Id == id);
                 
             if (userIndividual == null)
             {
@@ -47,7 +52,7 @@ namespace WebApiUsers.Controllers
         }
 
 
-        // POST: api/Users
+        // POST: api/Roles
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User userCreated)
         {
@@ -58,7 +63,7 @@ namespace WebApiUsers.Controllers
         }
 
 
-        // PUT: api/Users/5
+        // PUT: api/Roles/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(int id, User userUpdated)
         {

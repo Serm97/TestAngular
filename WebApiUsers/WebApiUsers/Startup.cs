@@ -13,6 +13,10 @@ using Microsoft.Extensions.Logging;
 using WebApiUsers.Models;
 using Microsoft.EntityFrameworkCore;
 using WebApiUsers.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace WebApiUsers
 {
@@ -31,6 +35,29 @@ namespace WebApiUsers
             //Define Context and Connection to database
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("ConexionBD")));
+
+            //Configure Auth Service of .NET Core
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                    .AddEntityFrameworkStores<ApplicationDbContext>()
+                    .AddDefaultTokenProviders();
+
+            //Configure Scheme Authentication > JWT
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                 options.TokenValidationParameters = new TokenValidationParameters
+                 {
+                     ValidateIssuer = true,
+                     ValidateAudience = true,
+                     ValidateLifetime = true,
+                     ValidateIssuerSigningKey = true,
+                     ValidIssuer = "poligran.edu.com",
+                     ValidAudience = "poligran.edu.com",
+                     IssuerSigningKey = new SymmetricSecurityKey(
+                     Encoding.UTF8.GetBytes(Configuration["Llave_JWT"])),
+                     ClockSkew = TimeSpan.Zero
+                 });
+
+
             services.AddControllers();
             
         }
@@ -48,6 +75,9 @@ namespace WebApiUsers
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //Define Authentication for app
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

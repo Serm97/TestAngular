@@ -140,6 +140,10 @@ C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\WebAp
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\WebApiUsers.runtimeconfig.dev.json
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\WebApiUsers.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\WebApiUsers.pdb
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -161,11 +165,18 @@ C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Micro
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -182,6 +193,7 @@ C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\Syste
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
@@ -253,3 +265,4 @@ C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebAp
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.csproj.CopyComplete
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.pdb
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.csprojAssemblyReference.cache
