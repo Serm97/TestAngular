@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SecurityService } from './services/security.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SystemUsers';
+
+  log : SecurityService;
+
+  logout(){
+    this.log.logout();
+  }
+
+
 }

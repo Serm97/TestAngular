@@ -8,21 +8,28 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { SecurityService } from './services/security.service';
+import { UsersComponent } from './components/users/users.component';
+import { UserComponent } from './components/user/user.component';
+import { HttpRequestInterceptor, HttpInterceptorModule } from './services/http-interceptor.module';
+import { UsersService } from './services/users.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    UsersComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpInterceptorModule
   ],
-  providers: [ SecurityService],
+  providers: [ SecurityService, UsersService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {  }

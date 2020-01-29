@@ -36,12 +36,13 @@ export class SecurityService {
 
   handleError(err: any){
     return throwError(err.error);
-    localStorage.removeItem('token');
+    
   }
 
   resetSecurityObject(){
     this.securityObject.token = '';
     this.securityObject.expiration = '';
     this.securityObject.isAuthenticated = false;
+    localStorage.removeItem('token');
   }
 }

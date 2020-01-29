@@ -27,7 +27,6 @@ namespace WebApiUsers
             Configuration = configuration;
         }
 
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         public IConfiguration Configuration { get; }
 
@@ -42,6 +41,16 @@ namespace WebApiUsers
             services.AddIdentity<ApplicationUser, IdentityRole>()
                     .AddEntityFrameworkStores<ApplicationDbContext>()
                     .AddDefaultTokenProviders();
+
+            //Configure CORS
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowMyOrigin",
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+                });
+            });
 
             //Configure Scheme Authentication > JWT
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -60,15 +69,6 @@ namespace WebApiUsers
                  });
 
 
-            //Configure CORS
-            services.AddCors(options =>
-            {
-                options.AddPolicy(MyAllowSpecificOrigins,
-                builder =>
-                {
-                    builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
-                });
-            });
 
             services.AddControllers();
             
@@ -82,18 +82,18 @@ namespace WebApiUsers
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseCors("AllowMyOrigin"); 
 
+            
             //Define Authentication for app
             app.UseAuthentication();
 
-            //Define CORS
-            app.UseCors(MyAllowSpecificOrigins);
-
+            app.UseAuthorization();
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
