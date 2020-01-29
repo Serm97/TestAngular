@@ -27,6 +27,8 @@ namespace WebApiUsers
             Configuration = configuration;
         }
 
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -58,6 +60,16 @@ namespace WebApiUsers
                  });
 
 
+            //Configure CORS
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                });
+            });
+
             services.AddControllers();
             
         }
@@ -78,6 +90,9 @@ namespace WebApiUsers
 
             //Define Authentication for app
             app.UseAuthentication();
+
+            //Define CORS
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {

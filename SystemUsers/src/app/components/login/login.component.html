@@ -1,19 +1,20 @@
 <div class="container m-5">
-    <h2 class="display-4 text-center"> Login App</h2>
+    
     <div class="row">
-        <div class="col-md-5"></div>
-        <div class="col-m-6">
+        <div class="col-md-2"></div>
+        <div class="col-m-8">
+            <h2 class="display-4 text-center"> Login Form</h2>
             <hr>
-            <form (ngSubmit)="login()">
+            <form #myForm="ngForm" (ngSubmit)="login()">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Username</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter username" required [(ngModel)]="user.username">
+                        placeholder="Enter username" name="username" required [(ngModel)]="user.username">
                     
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required [(ngModel)]="user.password">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" required [(ngModel)]="user.password">
                 </div>
                 
                 <button type="submit" class="btn btn-block btn-info active">Sign In</button>

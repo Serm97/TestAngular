@@ -256,6 +256,7 @@ C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\runti
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.csprojAssemblyReference.cache
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\staticwebassets\WebApiUsers.StaticWebAssets.Manifest.cache
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\staticwebassets\WebApiUsers.StaticWebAssets.xml
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.MvcApplicationPartsAssemblyInfo.cache
@@ -265,4 +266,3 @@ C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebAp
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.csproj.CopyComplete
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.pdb
-C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.csprojAssemblyReference.cache
