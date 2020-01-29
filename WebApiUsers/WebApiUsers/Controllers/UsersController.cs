@@ -87,6 +87,7 @@ namespace WebApiUsers.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
+            Console.WriteLine(id);
             var userForDelete = await _context.Users.FindAsync(id);
             
             if(userForDelete == null)

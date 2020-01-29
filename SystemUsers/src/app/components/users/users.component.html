@@ -9,18 +9,20 @@
                         <th scope="col">User</th>
                         <th scope="col">Name User</th>
                         <th scope="col">Active</th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
+                        <th scope="col" colspan="2"></th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let user of users">
-                        <td scope="row">{{user.userid}}</td>
+                        <td scope="row">{{user.id}}</td>
                         <td>{{user.username}}</td>
+                        <td>{{user.name}}</td>
+                        <td><kbd>{{user.active == true ? 'Active' : 'Block'}}</kbd></td>
                         <td>
-                            <a (click)="deleteUser(user.userid)" >Delete</a>
-                        </td>
-                        <td>
+                            <a class="btn btn-danger btn-sm text-white" (click)="deleteUser(user.id)" ><i class="fa fa-trash" aria-hidden="true"></i>
+                            </a>
+                            <a class="ml-2 btn btn-outline-primary text-primary btn-sm"  ><i class="fa fa-pencil" aria-hidden="true"></i></a>
                             <!-- <a [routerLink]="[ '/User', user..productId ]">Edit</a> -->
                         </td>
                     </tr>    

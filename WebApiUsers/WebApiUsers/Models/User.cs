@@ -10,7 +10,7 @@ namespace WebApiUsers.Models
     {
         public User()
         {
-            Roles = new List<Role>();
+
         }
 
         public int Id { get; set; }
@@ -18,7 +18,7 @@ namespace WebApiUsers.Models
         public string Username { get; set; }
         [Required]
         public String Name { get; set; }
-        public List<Role> Roles{ get; set; }
+        public Role[] Roles{ get; set; }
         public bool Active { get; set; }
     }
 }

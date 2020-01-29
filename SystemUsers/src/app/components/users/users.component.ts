@@ -19,10 +19,11 @@ export class UsersComponent implements OnInit {
     )
   }
 
-  deleteProduct(id: number) {
+  deleteUser(id: number) {
+    alert(id);
     if (confirm('Delete this user?')) {
       this.service.deleteUser(id).subscribe(
-        () => this.users = this.users.filter(f => f.userid != id)
+        () => this.users = this.users.filter(f => f.id != id)
       )
     }
   }

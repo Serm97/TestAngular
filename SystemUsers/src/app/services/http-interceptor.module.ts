@@ -7,7 +7,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 export class HttpRequestInterceptor implements HttpInterceptor {
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        var token = localStorage.getItem('bearerToken');
+        var token = localStorage.getItem('token');
         
         if (token) {
             const newReq = req.clone(

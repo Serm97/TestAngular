@@ -266,3 +266,4 @@ C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebAp
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.pdb
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\bin\Debug\netcoreapp3.1\System.Web.Cors.dll
 C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.MvcApplicationPartsAssemblyInfo.cache
+C:\Development\TestAngular\WebApiUsers\WebApiUsers\obj\Debug\netcoreapp3.1\WebApiUsers.csprojAssemblyReference.cache
